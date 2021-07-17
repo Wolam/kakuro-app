@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="780.0" prefWidth="1280.0" styleClass="fondo" stylesheets="@tablero.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Kakuro.ControladorJuego">
+    <GridPane fx:id="tableroKakuro" layoutX="118.0" layoutY="122.0" prefHeight="633.0" prefWidth="881.0" styleClass="fondo" stylesheets="@tablero.css">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #9b5d21;" />
+        <VBox layoutX="107.0" layoutY="80.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #9b5d21;" GridPane.columnIndex="1" />
+        <VBox alignment="TOP_CENTER" layoutX="107.0" layoutY="80.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="2">
+
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="205.0" layoutY="10.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="3">
+
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+
+        </VBox>
+        <VBox layoutX="107.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #9b5d21;" GridPane.columnIndex="4" />
+        <VBox layoutX="401.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #9b5d21;" GridPane.columnIndex="5" />
+        <VBox alignment="TOP_CENTER" layoutX="107.0" layoutY="79.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="6">
+
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="11">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="597.0" layoutY="9.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="7">
+
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="7">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+
+        </VBox>
+        <VBox layoutX="499.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #9b5d21;" GridPane.columnIndex="8" />
+        <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #9b5d21;" GridPane.rowIndex="1" />
+        <VBox alignment="TOP_CENTER" layoutX="107.0" layoutY="150.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+
+        </VBox>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+
+        </VBox>
+        <VBox layoutX="205.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="499.0" layoutY="220.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="11">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="5" GridPane.rowIndex="1">
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+
+        </VBox>
+        <VBox layoutX="695.0" layoutY="150.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="6" GridPane.rowIndex="1">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="597.0" layoutY="80.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="7" GridPane.rowIndex="1">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="793.0" layoutY="290.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="8" GridPane.rowIndex="1">
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+                <font>
+                    <Font size="19.0" />
+                </font>
+            </Text>
+
+        </VBox>
+        <VBox layoutX="10.0" layoutY="80.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #9b5d21;" GridPane.rowIndex="2" />
+        <VBox alignment="TOP_CENTER" layoutX="107.0" layoutY="80.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Text>
+            <Line endX="-3.7071075439453125" endY="29.422832489013672" startX="-100.0" startY="9.129940032958984" />
+            <Text layoutX="53.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" wrappingWidth="13.724609375">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Text>
+
+        </VBox>
+        <VBox layoutX="303.0" layoutY="80.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+
+        </VBox>
+        <VBox layoutX="205.0" layoutY="150.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="303.0" layoutY="220.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="4" GridPane.rowIndex="2">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="793.0" layoutY="80.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="5" GridPane.rowIndex="2">
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+
+        </VBox>
+        <VBox layoutX="793.0" layoutY="220.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="6" GridPane.rowIndex="2">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="597.0" layoutY="150.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="7" GridPane.rowIndex="2">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="695.0" layoutY="150.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="8" GridPane.rowIndex="2">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.rowIndex="3">
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+
+        </VBox>
+        <VBox layoutX="303.0" layoutY="150.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="107.0" layoutY="290.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+
+        </VBox>
+        <VBox layoutX="205.0" layoutY="290.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+
+        </VBox>
+        <VBox layoutX="303.0" layoutY="220.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="4" GridPane.rowIndex="3">
+
+            <TextField layoutX="11.0" layoutY="11.0" style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="499.0" layoutY="150.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="5" GridPane.rowIndex="3">
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="7">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+            <Line endX="-5.7071075439453125" endY="28.292892456054688" startX="-100.0" />
+            <Text layoutX="53.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+
+        </VBox>
+        <VBox layoutX="695.0" layoutY="290.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="6" GridPane.rowIndex="3">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+
+        </VBox>
+        <VBox layoutX="597.0" layoutY="220.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="7" GridPane.rowIndex="3">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+
+        </VBox>
+        <VBox layoutX="695.0" layoutY="290.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="8" GridPane.rowIndex="3">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="107.0" layoutY="150.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.rowIndex="4">
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+                <font>
+                    <Font size="19.0" />
+                </font>
+            </Text>
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+
+        </VBox>
+        <VBox layoutX="107.0" layoutY="220.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="205.0" layoutY="220.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="401.0" layoutY="80.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="3" GridPane.rowIndex="4">
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+            <Line endX="-2.7071075439453125" endY="24.292892456054688" startX="-100.0" />
+            <Text layoutX="53.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+
+        </VBox>
+        <VBox layoutX="205.0" layoutY="290.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="4" GridPane.rowIndex="4">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="401.0" layoutY="430.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="5" GridPane.rowIndex="4">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="695.0" layoutY="360.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="6" GridPane.rowIndex="4">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="793.0" layoutY="290.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="7" GridPane.rowIndex="4">
+
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="15">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="107.0" layoutY="80.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="8" GridPane.rowIndex="4">
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+
+        </VBox>
+        <VBox layoutX="10.0" layoutY="150.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #9b5d21;" GridPane.rowIndex="5" />
+        <VBox alignment="TOP_CENTER" layoutX="205.0" layoutY="360.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="16">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="303.0" layoutY="290.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="2" GridPane.rowIndex="5">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+            <Line endX="-2.7071075439453125" endY="19.292892456054688" startX="-100.0" />
+            <Text layoutX="53.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+        </VBox>
+        <VBox layoutX="401.0" layoutY="290.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="3" GridPane.rowIndex="5">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="303.0" layoutY="360.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="4" GridPane.rowIndex="5">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="499.0" layoutY="290.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="5" GridPane.rowIndex="5">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="401.0" layoutY="429.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="6" GridPane.rowIndex="5">
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+            <Line endX="-3.7071075439453125" endY="25.292892456054688" startX="-100.0" />
+            <Text layoutX="53.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+
+        </VBox>
+        <VBox layoutX="793.0" layoutY="360.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="7" GridPane.rowIndex="5">
+
+            <TextField layoutX="11.0" layoutY="11.0" style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+
+        </VBox>
+        <VBox layoutX="695.0" layoutY="360.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="8" GridPane.rowIndex="5">
+
+            <TextField layoutX="11.0" layoutY="11.0" style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="360.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.rowIndex="6">
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="24">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+
+        </VBox>
+        <VBox layoutX="401.0" layoutY="360.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="107.0" layoutY="430.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="2" GridPane.rowIndex="6">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="205.0" layoutY="430.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="3" GridPane.rowIndex="6">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="219.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="4" GridPane.rowIndex="6">
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+
+        </VBox>
+        <VBox layoutX="499.0" layoutY="360.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="5" GridPane.rowIndex="6">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="597.0" layoutY="500.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="6" GridPane.rowIndex="6">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="695.0" layoutY="570.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="7" GridPane.rowIndex="6">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="793.0" layoutY="360.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="8" GridPane.rowIndex="6">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="430.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.rowIndex="7">
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="23">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+
+        </VBox>
+        <VBox layoutX="107.0" layoutY="430.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="1" GridPane.rowIndex="7">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="205.0" layoutY="430.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="2" GridPane.rowIndex="7">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="303.0" layoutY="430.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="3" GridPane.rowIndex="7">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="288.0" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="4" GridPane.rowIndex="7">
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6">
+                <font>
+                    <Font size="19.0" />
+                </font>
+            </Text>
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+
+        </VBox>
+        <VBox layoutX="499.0" layoutY="430.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="5" GridPane.rowIndex="7">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="205.0" layoutY="80.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="6" GridPane.rowIndex="7">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="695.0" layoutY="430.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="7" GridPane.rowIndex="7">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="793.0" layoutY="570.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #9b5d21;" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+        <VBox layoutX="10.0" layoutY="360.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #9b5d21;" GridPane.rowIndex="8" />
+        <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="500.0" prefHeight="85.0" prefWidth="101.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="1" GridPane.rowIndex="8">
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+
+        </VBox>
+        <VBox layoutX="205.0" layoutY="500.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="2" GridPane.rowIndex="8">
+
+            <TextField layoutX="11.0" layoutY="11.0" style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+
+        </VBox>
+        <VBox layoutX="205.0" layoutY="570.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="3" GridPane.rowIndex="8">
+
+            <TextField layoutX="11.0" layoutY="11.0" style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+
+        </VBox>
+        <VBox layoutX="10.0" layoutY="570.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #9b5d21;" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+        <VBox alignment="TOP_CENTER" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="5" GridPane.rowIndex="8">
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="12">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+            <Line endX="-5.7071075439453125" endY="48.29289245605469" startX="-100.0" />
+
+        </VBox>
+        <VBox layoutX="597.0" layoutY="500.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="6" GridPane.rowIndex="8">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="597.0" layoutY="570.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dba767; -fx-border-color: #000000;" GridPane.columnIndex="7" GridPane.rowIndex="8">
+
+            <TextField style="-fx-font-size: 30; -fx-background-color: #dba767;">
+                <font>
+                    <Font size="43.0" />
+                </font>
+            </TextField>
+        </VBox>
+        <VBox layoutX="401.0" layoutY="570.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #9b5d21;" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+    </GridPane>
+    <Hyperlink fx:id="linkVerificar" layoutX="75.0" layoutY="-1.0" onMouseClicked="#verificar" prefHeight="57.0" prefWidth="179.0" text="Verificar" textFill="#613a1e" underline="true">
+        <font>
+            <Font name="Ani" size="32.0" />
+        </font>
+    </Hyperlink>
+    <Hyperlink layoutX="247.0" layoutY="-1.0" onMouseClicked="#reiniciarTablero" prefHeight="57.0" prefWidth="179.0" text="Reiniciar" textFill="#613a1e" underline="true">
+        <font>
+            <Font name="Ani" size="32.0" />
+        </font>
+    </Hyperlink>
+    <Hyperlink fx:id="linkEstadisticas" layoutX="1026.0" layoutY="-1.0" onMouseClicked="#mostrarEstadisticas" prefHeight="57.0" prefWidth="179.0" text="Estadisticas" textFill="#613a1e" underline="true">
+        <font>
+            <Font name="Ani" size="32.0" />
+        </font>
+    </Hyperlink>
+    <Hyperlink fx:id="linkSugerencia" layoutX="769.0" layoutY="-1.0" onMouseClicked="#sugerir" prefHeight="57.0" prefWidth="179.0" text="Sugerencias" textFill="#613a1e" underline="true">
+        <font>
+            <Font name="Ani" size="32.0" />
+        </font>
+    </Hyperlink>
+    <Hyperlink fx:id="linkSolucion" layoutX="426.0" layoutY="-1.0" onMouseClicked="#verSolucion" prefHeight="57.0" prefWidth="179.0" text="Solucion" textFill="#613a1e" underline="true">
+        <font>
+            <Font name="Ani" size="32.0" />
+        </font>
+    </Hyperlink>
+    <Hyperlink layoutX="605.0" layoutY="-1.0" onMouseClicked="#generarKakuro" prefHeight="57.0" prefWidth="179.0" text="Generar" textFill="#613a1e" underline="true">
+        <font>
+            <Font name="Ani" size="32.0" />
+        </font>
+    </Hyperlink>
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1072.0" layoutY="500.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@icono_reloj.png" />
+    </ImageView>
+    <TextField fx:id="textoCronometro" alignment="TOP_CENTER" editable="false" layoutX="1051.0" layoutY="650.0" prefHeight="50.0" prefWidth="193.0" style="-fx-background-color: transparent; -fx-font-size: 24;">
+        <font>
+            <Font name="Ani" size="24.0" />
+        </font>
+    </TextField>
+   <Button layoutX="1037.0" layoutY="348.0" mnemonicParsing="false" onMouseClicked="#ingresarSolucionCoordenadas" prefHeight="48.0" prefWidth="222.0" style="-fx-background-color: #dba767;" text="Ingresar coordenada" textFill="#613a1e">
+      <font>
+         <Font name="Ani" size="22.0" />
+      </font></Button>
+   <TextField fx:id="ingresoCoordenadaX" layoutX="1053.0" layoutY="109.0" promptText="Coordenada X" styleClass="coordenadas" stylesheets="@tablero.css">
+      <font>
+         <Font name="Ani" size="23.0" />
+      </font></TextField>
+   <TextField fx:id="ingresoCoordenadaY" layoutX="1053.0" layoutY="174.0" promptText="Coordenada Y" styleClass="coordenadas" stylesheets="@tablero.css">
+      <font>
+         <Font name="Ani" size="23.0" />
+      </font></TextField>
+   <TextField fx:id="ingresoNumero" layoutX="1059.0" layoutY="247.0" promptText="Numero" styleClass="coordenadas" stylesheets="@tablero.css">
+      <font>
+         <Font name="Ani" size="23.0" />
+      </font>
+   </TextField>
+   <Text fx:id="textoCantidadSugerencias" fill="#613a1e" layoutX="948.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(5)" wrappingWidth="50.7294921875">
+      <font>
+         <Font name="Ani" size="30.0" />
+      </font>
+   </Text>
+   <Text fill="#613a1e" layoutX="64.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font></Text>
+   <Text fill="#613a1e" layoutX="153.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font>
+   </Text>
+   <Text fill="#613a1e" layoutX="64.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font>
+   </Text>
+   <Text fill="#613a1e" layoutX="64.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font>
+   </Text>
+   <Text fill="#613a1e" layoutX="64.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font>
+   </Text>
+   <Text fill="#613a1e" layoutX="64.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font>
+   </Text>
+   <Text fill="#613a1e" layoutX="64.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font>
+   </Text>
+   <Text fill="#613a1e" layoutX="64.0" layoutY="579.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font>
+   </Text>
+   <Text fill="#613a1e" layoutX="64.0" layoutY="642.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font>
+   </Text>
+   <Text fill="#613a1e" layoutX="64.0" layoutY="714.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font>
+   </Text>
+   <Text fill="#613a1e" layoutX="243.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font>
+   </Text>
+   <Text fill="#613a1e" layoutX="348.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font>
+   </Text>
+   <Text fill="#613a1e" layoutX="449.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font>
+   </Text>
+   <Text fill="#613a1e" layoutX="547.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font>
+   </Text>
+   <Text fill="#613a1e" layoutX="629.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font>
+   </Text>
+   <Text fill="#613a1e" layoutX="746.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font>
+   </Text>
+   <Text fill="#613a1e" layoutX="836.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font>
+   </Text>
+   <Text fill="#613a1e" layoutX="937.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" wrappingWidth="22.904296875">
+      <font>
+         <Font name="Ani" size="29.0" />
+      </font>
+   </Text>
+</AnchorPane>

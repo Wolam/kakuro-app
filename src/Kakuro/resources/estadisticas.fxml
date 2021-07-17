@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="820.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Kakuro.ControladorEstadisticas">
+    <ImageView fitHeight="820.0" fitWidth="490.0" layoutX="-9.0" pickOnBounds="true">
+        <Image url="@fondoEstadisticas.jpg"/>
+    </ImageView>
+    <Text layoutX="88.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estadisticas Kakuro"
+          wrappingWidth="260.7294921875">
+        <font>
+            <Font name="Ani" size="32.0"/>
+        </font>
+    </Text>
+    <TextField id="ingreso_digitos" fx:id="ingresoDigitos" editable="false" layoutX="156.0" layoutY="162.0"
+               prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #dba767;"/>
+    <TextField id="verificaciones_realizadas" fx:id="verificacionesRealizadas" editable="false" layoutX="157.0"
+               layoutY="309.0" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #dba767;"/>
+    <TextField id="errores_verificacion" fx:id="erroresVerificacion" editable="false" layoutX="157.0" layoutY="459.0"
+               prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #dba767;"/>
+    <TextField id="sugerencias_usadas" fx:id="sugerenciasUtilizadas" editable="false" layoutX="157.0" layoutY="607.0"
+               prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #dba767;"/>
+    <TextField id="tipo_finalizacion" fx:id="tipoFinalizacion" editable="false" layoutX="241.0" layoutY="713.0"
+               prefHeight="53.0" prefWidth="185.0" style="-fx-background-color: #dba767;"/>
+    <TextField alignment="CENTER" editable="false" layoutX="50.0" layoutY="84.0" prefHeight="54.0" prefWidth="349.0"
+               style="-fx-background-color: #dba767;" text="Cantidad de celdas de ingreso de digitos ">
+        <font>
+            <Font name="Ani" size="20.0"/>
+        </font>
+    </TextField>
+    <TextField alignment="CENTER" editable="false" layoutX="50.0" layoutY="233.0" prefHeight="54.0" prefWidth="349.0"
+               style="-fx-background-color: #dba767;" text="Cantidad de verificaciones realizadas">
+        <font>
+            <Font name="Ani" size="20.0"/>
+        </font>
+    </TextField>
+    <TextField alignment="CENTER" editable="false" layoutX="50.0" layoutY="383.0" prefHeight="54.0" prefWidth="349.0"
+               style="-fx-background-color: #dba767;" text="Cantidad de errores de verificacion ">
+        <font>
+            <Font name="Ani" size="20.0"/>
+        </font>
+    </TextField>
+    <TextField alignment="CENTER" editable="false" layoutX="50.0" layoutY="534.0" prefHeight="54.0" prefWidth="349.0"
+               style="-fx-background-color: #dba767;" text="Cantidad de sugerencias utilizadas">
+        <font>
+            <Font name="Ani" size="20.0"/>
+        </font>
+    </TextField>
+    <TextField alignment="CENTER" editable="false" layoutX="14.0" layoutY="713.0" prefHeight="54.0" prefWidth="191.0"
+               style="-fx-background-color: #dba767;" text="Tipo Finalizacion">
+        <font>
+            <Font name="Ani" size="20.0"/>
+        </font>
+    </TextField>
+</AnchorPane>

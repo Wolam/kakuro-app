@@ -1,0 +1,10 @@
+.fondo{
+    -fx-background-image: url('tablero_fondo.jpg');
+    -fx-background-size: 100% 100%;
+    -fx-background-color: #b97533;
+}
+
+.coordenadas{
+    -fx-prompt-text-fill: #613a1e;
+    -fx-background-color: transparent;
+}
