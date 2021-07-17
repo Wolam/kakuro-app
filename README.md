@@ -1,5 +1,5 @@
 # IC-4700
-Kakuro desktop app made in programming language course
+Kakuro desktop app made in Java and Prolog
 
 ## Instructions
 
