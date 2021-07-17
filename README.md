@@ -1,4 +1,4 @@
-# IC-4700
+# kakuro-app #
 Kakuro desktop app made in Java and Prolog
 
 ## Instructions
