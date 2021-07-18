@@ -10,7 +10,7 @@ This project was developed with the `JDK 11`, the main installation instructions
 
 **Execution**
 
-When the application is launched, the start window is displayed on the screen with which you can start a new Kakuro game with the respective rules.
+When the application is launched, the start window is displayed on the screen in which you can start a new Kakuro game with the respective [rules](https://en.wikipedia.org/wiki/Kakuro).
 
 ![](https://raw.githubusercontent.com/Wolam/IC-4700/master/docs/inicio.png)
 
